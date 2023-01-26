@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Mukta:wght@300&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caramel&family=Mukta:wght@300&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+:root{
+    --red:#DE3163;
+    --blue:#2E86C1;
+    --gray:#808080;
+    --background-color:#ECF0F1;
+    --card-color:#FDFEFE;
+
+}
+body{
+    font-family: 'Mukta', sans-serif;
+}
+ul{
+    list-style: none;
+}
+header{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 20px;
+}
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+
+#task-form{
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    
+}
+#task-title{
+    width: 65%;
+    height: 1.6em;
+    font-size: 1.2em;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+#task-form button{
+    width: 15%;
+    height: 42px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    font-size: 1.2em;
+}
+.single-task{
+    box-sizing: border-box;
+    width: 400px;
+    height: 70px;
+    background-color: var(--card-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 5px;
+}
+.single-task button,.single-task input{
+    border: none;
+    outline: none;
+}
+.single-task input:focus{
+    border-bottom: 2px solid var(--gray);
+}
+.single-task .edit{
+    color: var(--blue);
+}
+.single-task .delete{
+    color: var(--red);
+    
+}
+.error{
+    color: var(--red);
+    text-align: center;
+}
